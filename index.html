@@ -7,7 +7,7 @@
     <title>Cashify</title>
 </head>
 <body>
-    <header class="shadow">
+    <header class="shadow hidden md:block">
         <div class="container mx-auto px-32 py-3 ">
             <div class="grid grid-cols-1 sm:grid-cols-6">
                 <div class="col-span-1">
@@ -40,8 +40,8 @@
             </div>
         </div>
     </header>
-    <section>
-        <nav class="shadow px-32">
+    <section class="hidden md:block shadow">
+        <nav class="container mx-auto px-32">
             <div class="flex space-x-20 py-3">
                 <p class="font-bold text-sm hover:text-[#42C8B7] cursor-pointer">All></p>
                 <p class="font-bold text-sm hover:text-[#42C8B7] cursor-pointer">Sell Phones></p>
@@ -55,16 +55,16 @@
         </nav>
     </section>
     <section>
-        <div class="container mx-auto px-32 py-8">
+        <div class="container mx-auto md:px-32 md:py-8">
             <img class="rounded-md" src="https://s3ng.cashify.in/cashify/web/7da72ed7785f44c4a28c3530e5dc4025.webp?w=1300" alt="">
         </div>
     </section>
     <section>
-        <div class="container mx-auto px-32 pt-10">
+        <div class="container mx-auto px-5 md:px-32 pt-10">
             <div>
                 <p class="text-3xl font-bold">Our Services</p>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-8 space-x-3 pt-4">
+            <div class="grid grid-cols-4 xl:grid-cols-8 space-x-3 pt-4">
                 <div class="col-span-1">
                     <div class="cursor-pointer">
                         <img src="https://s3ng.cashify.in/builder/cd13764b153e46e19f9c6551ee52b5e6.webp?w=300" alt="">
@@ -115,11 +115,11 @@
         </div>
     </section>
     <section>
-        <div class="container mx-auto px-32 py-10">
+        <div class="container mx-auto px-5 md:px-32 py-10">
             <div>
                 <p class="text-3xl font-bold">Sell your Old Phone</p>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-8 space-x-3 pt-4">
+            <div class="grid grid-cols-4 xl:grid-cols-8 space-x-3 pt-4">
                 <div class="col-span-1 cursor-pointer">
                     <img src="https://s3ng.cashify.in/builder/81c3c74f0683463da548ae2cbe1fec28.webp?w=300" alt="">
                     <p class="pt-2 text-sm font-semibold text-center">Sell Phone</p>
@@ -156,12 +156,12 @@
         </div>
     </section>
     <section>
-        <div class="container mx-auto px-32">
+        <div class="container mx-auto px-5 md:px-32">
             <div>
                 <p class="text-3xl font-bold">Buy Refurbished Devices</p>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-5 pt-4 space-x-4">
-                <div class="col-span-1 cursor-pointer border rounded-md">
+            <div class="flex md:grid grid-cols-2 xl:grid-cols-5 pt-4 space-x-4 space-y-4 overflow-x-scroll">
+                <div class="col-span-1 cursor-pointer border rounded-md whitespace-nowrap pr-3">
                     <div>
                         <div>
                             <img class="w-20 pt-3 pl-3" src="https://s3ng.cashify.in/estore/658f05797b2d4354a604fe75c5c0499a.webp?w=240" alt="">
@@ -180,7 +180,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-1 cursor-pointer border rounded-md">
+                <div class="col-span-1 cursor-pointer border rounded-md whitespace-nowrap pr-3">
                     <div>
                         <div>
                             <img class="w-20 pt-3 pl-3" src="https://s3ng.cashify.in/estore/658f05797b2d4354a604fe75c5c0499a.webp?w=240" alt="">
@@ -199,7 +199,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-1 cursor-pointer border rounded-md">
+                <div class="col-span-1 cursor-pointer border rounded-md whitespace-nowrap pr-3">
                     <div>
                         <div>
                             <img class="w-20 pt-3 pl-3" src="https://s3ng.cashify.in/estore/658f05797b2d4354a604fe75c5c0499a.webp?w=240" alt="">
@@ -218,7 +218,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-1 cursor-pointer border rounded-md">
+                <div class="col-span-1 cursor-pointer border rounded-md whitespace-nowrap pr-3">
                     <div>
                         <div>
                             <img class="w-20 pt-3 pl-3" src="https://s3ng.cashify.in/estore/658f05797b2d4354a604fe75c5c0499a.webp?w=240" alt="">
@@ -237,7 +237,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-1 cursor-pointer border rounded-md">
+                <div class="col-span-1 cursor-pointer border rounded-md whitespace-nowrap pr-3">
                     <div>
                         <div>
                             <img class="w-20 pt-3 pl-3" src="https://s3ng.cashify.in/estore/658f05797b2d4354a604fe75c5c0499a.webp?w=240" alt="">
@@ -260,11 +260,11 @@
         </div>
     </section>
     <section>
-        <div class="container mx-auto px-32 py-10">
+        <div class="container mx-auto px-5 md:px-32 py-10">
             <div>
                 <p class="text-3xl font-bold">Refurbished Laptops</p>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-5 pt-4 space-x-4">
+            <div class="flex md:grid grid-cols-2 xl:grid-cols-5 pt-4 space-x-4 overflow-x-scroll">
                 <div class="col-span-1 border rounded-md cursor-pointer">
                     <div>
                         <div>
