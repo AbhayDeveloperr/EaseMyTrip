@@ -299,6 +299,12 @@
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+  .flex-nowrap {
+    flex-wrap: nowrap;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .place-items-center {
     place-items: center;
   }
@@ -555,6 +561,18 @@
   .md\:py-8 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 8);
+    }
+  }
+  .md\:whitespace-normal {
+    @media (width >= 48rem) {
+      white-space: normal;
+    }
+  }
+  .md\:\*\:whitespace-normal {
+    @media (width >= 48rem) {
+      :is(& > *) {
+        white-space: normal;
+      }
     }
   }
   .lg\:grid-cols-2 {
